@@ -1,0 +1,30 @@
+<h1>Diff Tool</h1>
+<p id="dialogDesc" class="dialog-text">Please fill in the fileds and then hit Submit to get  the results of the Diff Tool sent to your email address.</p>
+<h5>Only  WAREHOUSE1,  WAREHOUSE2, filter1, filter2 and Primary_key2 can be left blank, everything else has to be filled in.</h5>
+<h5> The Warehouse names,  the table names, database names and the schema names are case sensitive and their names  should strictly follow how they appear in the databases when it comes to lower cases and upper cases.</h5>
+<h5> The columns of the snowflake tables should be capitalized.</h5>
+<h5> The columns of the Azure Sql server table are not case sensitive.</h5>
+<h5> The filter of the Azure Sql server table is not case sensitive.</h5>
+<h5> The filter of the Snowflake table server table is not case sensitive.</h5>
+<h5> Primary_key1 and Primary_key2 are not case sensitive.</h5>
+<h5> Primary_key1 and Primary_key2 should be in the Columns1 and Columns2.</h5>
+<h5> Primary_key1 is required, But Primary_key2 is optional.</h5>
+<!-- <form action="/data" method = "POST"> -->
+<form action = "{{ url_for("result")}}" method = "POST">        
+    <p>WAREHOUSE1 <input type = "text" name = "WAREHOUSE1" /></p>
+    <p>Columns1 <input type = "text" name = "Columns1" /></p>
+    <p>DATABASE1 <input type = "text" name = "DATABASE1" /></p>
+    <p>SCHEMA1 <input type = "text" name = "SCHEMA1" /></p>
+    <p>Table1 <input type = "text" name = "Table1" /></p>
+    <p>filter1 <input type = "text" name = "filter1" /></p>
+    <p>WAREHOUSE2<input type = "text" name = "WAREHOUSE2" /></p>
+    <p>Columns2 <input type = "text" name = "Columns2" /></p>
+    <p>DATABASE2 <input type = "text" name = "DATABASE2" /></p>
+    <p>SCHEMA2 <input type = "text" name = "SCHEMA2" /></p>
+    <p>Table2 <input type = "text" name = "Table2" /></p>
+    <p>filter2 <input type = "text" name = "filter2" /></p>
+    <p>Primary_key1 <input type = "text" name = "Primary_key1" /></p>
+    <p>Primary_key2 <input type = "text" name = "Primary_key2" /></p>
+    <p>Email_Address <input type = "text" name = "Email_Address" /></p>
+    <p><input type = "submit" value = "Submit" /></p>
+</form>
