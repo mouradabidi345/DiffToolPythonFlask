@@ -15,9 +15,9 @@ from flask import Flask, request, render_template,request
 import pythoncom
 from urllib import parse
 
-connecting_stringA = 'Driver={ODBC Driver 17 for SQL Server};Server=tcp:bidev.database.windows.net,1433;Database=InfoTrax_Prod;Uid=bidevreader;Pwd=BJbhPxv3nMZhW8u3;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
-connecting_stringB = 'Driver={ODBC Driver 17 for SQL Server};Server=tcp:dlo6zra872.database.windows.net,1433;Database=Asea_Prod;Uid=aseauser;Pwd=@S34Pr0d;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
-connecting_stringC = 'Driver={ODBC Driver 17 for SQL Server};Server=tcp:bidev.database.windows.net,1433;Database=ASEA_REPORTS;Uid=BI_primary;Pwd=@234_MgaKaKa!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
+connecting_stringA = 'Hidden'
+connecting_stringB = 'Hidden'
+connecting_stringC = 'Hidden'
 
 paramsA = parse.quote_plus(connecting_stringA)
 paramsB = parse.quote_plus(connecting_stringB)
